@@ -220,7 +220,7 @@ require('lazy').setup({
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
-  -- require 'kickstart.plugins.autoformat',
+  require 'kickstart.plugins.autoformat',
   -- require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -523,7 +523,7 @@ local servers = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
       -- NOTE: toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-      -- diagnostics = { disable = { 'missing-fields' } },
+      diagnostics = { disable = { 'missing-fields' } },
     },
   },
 }
@@ -613,3 +613,7 @@ cmp.setup {
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.opt.nu = true
 vim.wo.relativenumber = true
+-- Always show at least one line above/below the cursor.
+vim.wo.scrolloff=1
+-- Always show at least one line left/right of the cursor.
+vim.wo.sidescrolloff=5
