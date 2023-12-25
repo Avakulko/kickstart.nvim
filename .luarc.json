@@ -1,0 +1,11 @@
+{
+  "runtime.version": "LuaJIT",
+  "workspace": {
+    "checkThirdParty": false,
+    "ignoreDir": [".vscode", ".git"],
+    "library": [
+      "/nix/store/j3dbrk5h42k1b4mrmcl5nba9qndqkqji-neovim-unwrapped-0.9.4/share/nvim/runtime"
+    ]
+  },
+  "diagnostics.disable": "missing-fields"
+}

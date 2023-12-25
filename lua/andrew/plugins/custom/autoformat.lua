@@ -1,3 +1,5 @@
+-- TODO: do i need autoformatting autocmd from kickstart?
+
 -- autoformat.lua
 --
 -- Use your language server to automatically format your code on save.

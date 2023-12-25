@@ -1,4 +1,4 @@
 tags
 test.sh
-.luarc.json
+# .luarc.json
 nvim
